@@ -15,7 +15,7 @@ public class BankAccount {
     try {
       balance += amount;
       System.out.println("Deposit: " + amount);
-      System.out.println("Balance after deposit: " + balance);
+      System.out.println("Available balance: " + balance);
     } finally {
       lock.unlock();
     }
@@ -27,7 +27,7 @@ public class BankAccount {
       if (balance >= amount) {
         balance -= amount;
         System.out.println("Withdrawal: " + amount);
-        System.out.println("Balance after withdrawal: " + balance);
+        System.out.println("Available balance: " + balance);
       } else {
         System.out.println("Try to Withdraw: " + amount);
         System.out.println("Insufficient funds. Withdrawal cancelled.");
