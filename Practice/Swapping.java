@@ -1,19 +1,24 @@
+import java.util.*;
 public class Swapping {
     public static void main(String[] args) {
-        int m = 10, n = 5;
-        System.out.println("Before swapping: m = " + m + ", n = " + n);
+        Scanner sc = new Scanner(System.in);
 
-        int temp = m;
-        m = n;
-        n = temp;
-        System.out.println("After swapping: m = " + m + ", n = " + n);
+        int var1 = sc.nextInt();
+        int var2 = sc.nextInt();
+
+        System.out.println("Before swapping: var1 = " + var1 + ", var2 = " + var2);
+
+        int temp = var1;
+        var1 = var2;
+        var2 = temp;
+        System.out.println("After swapping: var1 = " + var1 + ", var2 = " + var2);
 
         // Swapping two variables without using 3rd variable
-        m = 11;
-        n = 9;
-        m = m + n;
-        n = m - n;
-        m = m - n;
-        System.out.println("After swapping: m = " + m + ", n = " + n);
+        var1 = var1 + var2;
+        var2 = var1 - var2;
+        var1 = var1 - var2;
+        System.out.println("After swapping: var1 = " + var1 + ", var2 = " + var2);
+
+        sc.close();
     }
 }
