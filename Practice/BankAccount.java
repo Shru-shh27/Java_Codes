@@ -30,7 +30,7 @@ public class BankAccount {
         System.out.println("Available balance: " + balance);
       } else {
         System.out.println("Try to Withdraw: " + amount);
-        System.out.println("Insufficient funds. Withdrawal cancelled.");
+        System.out.println("Insufficient balance. Withdrawal cancelled.");
       }
     } finally {
       lock.unlock();
