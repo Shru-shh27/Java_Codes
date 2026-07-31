@@ -273,32 +273,57 @@
 // return arr;
 
 
-    public List<List<Integer>> threeSum(int[] nums) {
-       public List<List<Integer>> threeSum(int[] nums) {
-        int n = nums.length;
+//     public List<List<Integer>> threeSum(int[] nums) {
+//        public List<List<Integer>> threeSum(int[] nums) {
+//         int n = nums.length;
         
-Set<List<Integer>> res = new HashSet<>();
+// Set<List<Integer>> res = new HashSet<>();
 
-for(int i=0;i<n;i++){
-     HashSet<Integer> set = new HashSet<>();
-    for(int j=i+1;j<n;j++){
-        int third = 0 -(nums[i]+nums[j]);
-        if(set.contains(third)){
-            ArrayList<Integer> triplets = Arrays.asList(nums[i],nums[j],third);
-            Collection.sort(triplets);
+// for(int i=0;i<n;i++){
+//      HashSet<Integer> set = new HashSet<>();
+//     for(int j=i+1;j<n;j++){
+//         int third = 0 -(nums[i]+nums[j]);
+//         if(set.contains(third)){
+//             ArrayList<Integer> triplets = Arrays.asList(nums[i],nums[j],third);
+//             Collection.sort(triplets);
 
-            res.add(triplets);
+//             res.add(triplets);
             
-        }
+//         }
       
 
     
-    return new ArrayList<>(res);
+//     return new ArrayList<>(res);
 
+//     }
+// }
+//        }
+//     }
+
+
+//     set.add(nums[j]);
+
+public class Main {
+    public static void moveZeros(int[] nums) {
+        int pos = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+             int value = nums[i];
+                nums[i] = nums[pos];
+                nums[pos] = value;
+                pos++;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 0, 2, 0, 3, 0, 4};
+
+        moveZeros(nums);
+
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
     }
 }
-       }
-    }
-
-
-    set.add(nums[j]);
