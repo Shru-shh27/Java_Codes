@@ -10,6 +10,8 @@ public class library {
     }
 
     void Bookavailable(){
-        
+        System.out.println("Book available");
+
     }
+    
 }

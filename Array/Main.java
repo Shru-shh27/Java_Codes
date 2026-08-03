@@ -303,27 +303,27 @@
 
 //     set.add(nums[j]);
 
-public class Main {
-    public static void moveZeros(int[] nums) {
-        int pos = 0;
+// public class Main {
+//     public static void moveZeros(int[] nums) {
+//         int pos = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-             int value = nums[i];
-                nums[i] = nums[pos];
-                nums[pos] = value;
-                pos++;
-            }
-        }
-    }
+//         for (int i = 0; i < nums.length; i++) {
+//             if (nums[i] != 0) {
+//              int value = nums[i];
+//                 nums[i] = nums[pos];
+//                 nums[pos] = value;
+//                 pos++;
+//             }
+//         }
+//     }
 
-    public static void main(String[] args) {
-        int[] nums = {1, 0, 2, 0, 3, 0, 4};
+//     public static void main(String[] args) {
+//         int[] nums = {1, 0, 2, 0, 3, 0, 4};
 
-        moveZeros(nums);
+//         moveZeros(nums);
 
-        for (int num : nums) {
-            System.out.print(num + " ");
-        }
-    }
-}
+//         for (int num : nums) {
+//             System.out.print(num + " ");
+//         }
+//     }
+// }

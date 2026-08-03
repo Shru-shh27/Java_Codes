@@ -58,7 +58,7 @@
 
 //     }
 //     @Override
-//     voud 
+
 
 // }
 
@@ -121,8 +121,7 @@ public class PersonManagementSystem {
     public static void main(String[] args) {
 
         Student s = new Student("Shruti", 20, 101);
-        Teacher t = new Teacher("Shreya
-        ", 35, "Java");
+        Teacher t = new Teacher("Shreya", 35, "Java");
 
         s.displayDetails();
         System.out.println();
