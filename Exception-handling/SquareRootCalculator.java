@@ -41,6 +41,7 @@ public class SquareRootCalculator {
 
             }
             
+            
             double result = Math.sqrt(number);
 
             System.out.println("Square root: " + result);    

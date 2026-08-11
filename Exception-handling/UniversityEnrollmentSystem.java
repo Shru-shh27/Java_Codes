@@ -44,7 +44,7 @@ class Course {
 
  
 
-    // Constructor
+   
 
     public Course(String name, int maxCapacity, String prerequisite) {
 

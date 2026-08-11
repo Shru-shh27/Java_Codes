@@ -1,3 +1,4 @@
+package Banking;
 //Design Java programs showcasing exception handling through square root calculations, an ATM withdrawal system, and a university enrollment system with custom exceptions.
 
 import java.util.Scanner;
