@@ -4,16 +4,14 @@ import java.util.*;
 
 public class frequency {
     String s1 = "Hello";System.out.println(s1);
-
-    // frequency of each elements
     String s2 = "Hello";System.out.println(s2);
-    // Calculate frequency of each character in s2
+
     int[] frequency = new int[256];for(
-    int i = 0;i<s2.length();i++)
+    int i = 0; i<s2.length();i++)
     {
         frequency[s2.charAt(i)]++;
     }
-    // Print frequency of each character
+
     for(
     int i = 0;i<frequency.length;i++)
     {
